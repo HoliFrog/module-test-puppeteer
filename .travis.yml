@@ -8,9 +8,9 @@ script:
   - npm test -- --runInBand
 
 notifications:
-  email: true
+  email: olivier.menuel@le-campus-numerique.fr
 
- env:
+env:
   global:
     secure: ... encoded secret ...
 before_install:
