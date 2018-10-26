@@ -35,7 +35,7 @@
         }, timeout);
         //////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////
-        
+
         // parcours client création d'un user et delete user en tant qu'admin
         test('Create and delete user lambda', async () => {
             var username = 'yu';
@@ -96,7 +96,7 @@
             await page.$eval( '#admin_users_table a.btn-danger', el => el.click() );
             await page.waitFor(1000)
 
-            await page.screenshot({path: './tests/img/shorte23.png'});
+            await page.screenshot({path: './tests/img/shorte25.png'});
            
         }, timeout);
 
