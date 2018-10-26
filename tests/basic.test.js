@@ -1,4 +1,5 @@
     const timeout = 15000
+    //const cre = require('/credentials.test.json')
 
     // série de tests sur la page d'accueil
     describe("Tests basiques", () => {
@@ -37,6 +38,8 @@
         //////////////////////////////////////////////////////////////
 
         // parcours client création d'un user et delete user en tant qu'admin
+
+
         test('Create and delete user lambda', async () => {
             var username = 'yu';
             var pw = 'yu';
