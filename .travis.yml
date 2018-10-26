@@ -10,8 +10,3 @@ script:
 notifications:
   email: olivier.menuel@le-campus-numerique.fr
 
-env:
-  global:
-    secure: ... encoded secret ...
-before_install:
-  - echo $PASSWORD | gpg --passphrase-fd 0 credentials.json.gpg

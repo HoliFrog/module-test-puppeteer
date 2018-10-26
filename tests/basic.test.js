@@ -1,5 +1,5 @@
     const timeout = 15000
-    //const cre = require('/credentials.test.json')
+    const cre = require('../credentials.json')
 
     // série de tests sur la page d'accueil
     describe("Tests basiques", () => {
