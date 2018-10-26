@@ -9,8 +9,9 @@ script:
 
 notifications:
   email: true
-  env:
+  
+ env:
   global:
     secure: ... encoded secret ...
 before_install:
-  - echo $PASSWORD | gpg --passphrase-fd 0 super_secret.txt.gpg
+  - echo $PASSWORD | gpg --passphrase-fd 0 credentials.txt.gpg

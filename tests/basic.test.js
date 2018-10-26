@@ -61,7 +61,7 @@
             await page.type('form[action="/signup"] input[name="password"]',pw)
             await page.type('form[action="/signup"] input[name="email"]',mail)
             await page.$eval( 'form[action="/signup"] input[value="Register"]', el => el.click() )
-            await page.screenshot({path: './tests/img/shorte24.png'});
+            await page.screenshot({path: './tests/img/shorte24.png'})
 
             
             // on récupère le code HTML
@@ -83,7 +83,7 @@
             await page.evaluate( () => {
                     Array
                         .from( document.querySelectorAll( 'ul li a' ) )
-                        .filter( el => el.textContent === 'Settings' )[0].click();
+                        .filter( el => el.textContent === 'Settings' )[0].click()
                 });
                 await page.waitFor(1000)
 
@@ -96,7 +96,7 @@
            
             
             await page.waitFor(1000)
-            await page.$eval( '#admin_users_table a.btn-danger', el => el.click() );
+            await page.$eval( '#admin_users_table a.btn-danger', el => el.click() )
             await page.waitFor(1000)
 
             await page.screenshot({path: './tests/img/shorte25.png'});
